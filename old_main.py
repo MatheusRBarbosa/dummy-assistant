@@ -3,11 +3,7 @@ import pyttsx3
 import datetime
 import wikipedia
 import webbrowser
-import os
 import time
-import wolframalpha
-import json
-import requests
 
 engine=pyttsx3.init('sapi5')
 voices=engine.getProperty('voices')
