@@ -17,9 +17,9 @@ class TimerService:
         
         if multiplier != None and time != None:
             return {
-                "text": "Timer de {} {}".format(time, multiplier),
+                "text": "Iniciando timer de {} {}".format(time, multiplier),
                 "action": Actions.TIMER_COUNTDOWN,
-                "values": [ time, multiplier ]
+                "values": [ time[0], multiplier ]
             }
         else:
             return {
