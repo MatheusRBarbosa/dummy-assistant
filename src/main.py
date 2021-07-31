@@ -1,6 +1,5 @@
-from client.client import Client
+from boot import Boot
 
 if __name__=='__main__':
-    client = Client()
-    while True:
-        client.listen()
+    booter = Boot()
+    booter.start()
