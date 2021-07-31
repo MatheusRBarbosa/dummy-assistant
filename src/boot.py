@@ -20,9 +20,10 @@ class Boot:
 
     def __has_action(self, answer):
         action = answer.get("action")
+        values = answer.get("values")
         if action != None:
             action_method = getattr(actions, action.value)
-            action_method()
+            action_method(values) if values != None else action_method()
         
     def __has_text(self, answer):
         text = answer.get("text")
